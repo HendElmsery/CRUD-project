@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title m-auto fw-bolder">system managment</h1>
+        <label for="productNameInput">Name</label>
+        <input type="text" class="form-control mb-3" id="productNameInput" >
+        <label for="productPriceInput">Price</label>
+        <input type="number" class="form-control mb-3" id="productPriceInput" >
+        <label for="productCategoryInput">Category</label>
+        <input type="text" class="form-control mb-3" id="productCategoryInput" >
+        <label for="productDescribtionInput">Describtion</label>
+        <textarea type="text" class="form-control mb-3" id="productDescribtionInput" ></textarea>
+        <button class=" btn btn-info " onclick="addProduct()">Add Product</button>
+    
+
+    <table class=" table">
+        <thead>
+            <th>Index</th>
+            <th>ProductName</th>
+            <th>ProductPrice</th>
+            <th>ProductCategory</th>
+            <th>ProductDesc</th>
+            <th>update</th>
+            <th>delete</th>
+
+        </thead>
+        <tbody id="tablebody">
+
+        </tbody>
+    </table>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
